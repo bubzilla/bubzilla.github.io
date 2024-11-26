@@ -3,5 +3,10 @@
         "name": "Bubzilla Clicker",
         "icon": "/img/bubzilla-clicker.jpg",
         "link": "/games/bubzilla-clicker.html"
+    },
+    {
+        "name": "Subway Surfers",
+        "icon": "/img/subwaysurfers.png",
+        "link": "/games/subway-surfers.html"
     }
 ]
