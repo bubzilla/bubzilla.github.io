@@ -5,12 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bubzilla.DEV</title>
 
+        <script src="https://cdn.jsdelivr.net/npm/showdown@latest/dist/showdown.min.js"></script>
         <link rel="stylesheet" href="/style/stylesheet.css">
     </head>
     <body>
         <script src="js/header.js"></script>
-        <div class="container" style="width: 95%;">
-            <p>Welcome to my website! I'm not really doing much with it at the moment, but soon I'll probally have something functional here!</p>
-        </div>
+        <!-- Markdown Parser carrying. FRR -->
+        <div id="markdown" class="container" style="width: 95%;"></div>
     </body>
+
+    <script>
+        fetch('/index.md')
+        .then(response => response.text())
+        .then(text => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(text);
+            document.getElementById('markdown').innerHTML = html;
+        });
+    </script>
 </html>
