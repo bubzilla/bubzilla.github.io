@@ -9,13 +9,15 @@
         <link rel="stylesheet" href="/style/stylesheet.css">
     </head>
     <body>
-        <script src="js/header.js"></script>
+        <script src="/js/header.js"></script>
+        <script src="/js/footer.js"></script>
+        
         <!-- Markdown Parser carrying. FRR -->
         <div id="markdown" class="container" style="width: 95%;"></div>
     </body>
 
     <script>
-        fetch('/index.md')
+        fetch('index.md')
         .then(response => response.text())
         .then(text => {
             const converter = new showdown.Converter();

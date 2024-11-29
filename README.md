@@ -1,1 +1,2 @@
-# bubzilla.github.io
+# bubzilla.dev
+[Click Me!](https://bubzilla.dev)
