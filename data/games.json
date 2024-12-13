@@ -8,5 +8,10 @@
         "name": "Subway Surfers",
         "icon": "/img/subwaysurfers.png",
         "link": "/games/subway-surfers.html"
+    },
+    {
+        "name": "Gambling Simulator",
+        "icon": "/img/gambling-simulator.png",
+        "link": "/games/gamble.html"
     }
 ]
